@@ -1,0 +1,296 @@
+/* TIPOGRAFÍA DE RALEWAY
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
+CSS rules to specify families
+
+font-family: 'Raleway', sans-serif; */
+
+/* 576px movíl 
+    768px tab
+    962px portatiles
+    1200px* grandes ordenadores*/
+
+
+
+header nav ul li{
+    margin-left: 1em;
+    
+}
+
+header nav ul li a{
+    color: #fff;
+    line-height:50%;
+    font-weight: 700;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0.3em
+}
+
+header nav ul li:nth-child(5)a, header nav ul li:last-child a{
+    color: #315075;
+}
+
+header nav .navbar-brand {
+    margin-left: 0.2em;
+    
+}
+
+header nav .navbar-brand:hover{
+    transform: rotate(-14deg);
+    
+}
+
+header nav a img{
+    width: 40px;
+}
+
+header nav a .logo{
+    width: 50px;
+}
+
+.navbar{
+    width: 100%;
+    background: #d50c3f;
+    box-shadow: 5px 5px 5px #293744;
+    position:fixed;
+    z-index:2;
+    top:0;
+} 
+
+
+
+#navbarSupportedContent{
+    position: absolute;
+    top: 4em;
+    right: 0;
+    z-index:2;
+    background: linear-gradient(0.25turn, #C1D8F5, #4682b4, #145A8D);
+    border: 1px solid #145A8D;
+    
+}
+
+
+.account  {
+    list-style-type: none;
+    text-decoration: none;
+    margin:0;
+}
+
+.content .login{
+   
+    width: 5em;
+    border-radius: 5px;
+    background-color: #145A8D;
+    color: #F2EFE8;
+} 
+
+.content .login:hover{
+    background-color: #F192AD;
+    color: #145A8D;
+   
+} 
+
+.content .registrate{
+    margin-left: 3em;
+    width: 5em;
+    border-radius: 5px;
+    background-color: #145A8D;
+        color: #F2EFE8;
+} 
+
+.content .registrate:hover{
+    background-color: #F192AD;
+    color: #145A8D;
+
+}
+
+
+footer.top {
+    height: 50px; 
+    box-shadow: 0 -5px 10px -2px #145A8D;
+    border-top: 1px solid #145A8D;
+    background: linear-gradient(0.25turn, #C1D8F5, #4682b4, #145A8D);
+    width: 100%;
+    height:5vh;
+    /* position: relative; */
+    position: sticky;
+}
+
+footer .warnings div{
+    font-family: "Iconic-Stencil-Bold-trial";
+    font-size: 0.8em;
+    margin:0.5em;
+    float: left; 
+    
+}
+
+.copyright {
+    font-family: "Neoneon.otf" !important;
+    color: #145A8D;
+    font-weight: 100px !important;
+
+}
+
+footer .warnings div a{
+    color: #145A8D;
+    text-decoration:none;
+}
+
+footer .warnings div a:hover{
+    color: #F192AD;
+}
+
+
+
+
+
+/* 
+*MediaQuerys
+ */
+
+
+@media (min-width: 768px) {
+#navbarSupportedContent{
+   width: 40%;
+   
+    
+}
+.content .login{
+    width: 8em;
+    border-radius: 5px;;
+} 
+
+
+
+.content .registrate{
+    width: 8em;
+    float: right;
+    
+} 
+
+
+
+footer.top {
+    height:4vh;
+}
+
+footer .warnings div{
+    font-size: 1em;
+    margin-left: 2em; 
+    
+    }
+}
+
+
+
+@media (min-width: 962px) { 
+    .container-fluid{
+        position: initial;
+    }
+
+    #navbarSupportedContent{
+    position: inherit;
+    background: none;
+    border: none
+    
+    }
+
+    
+
+    header nav ul li{
+    margin-left: 2em;
+    
+    }
+    header nav ul li a{
+        font-size: 1.3em;
+    }
+    header nav ul li a:hover{
+    color: #f192ad;
+    font-size: 1.3em;
+    transition: color 1s linear;
+    transition: font-size 0.5s linear;
+    }
+
+    header nav ul li a i :hover{
+    color: #f192ad;
+    transition: color 1s linear;
+    font-size: 1.3em;
+    }
+
+    header nav ul li:first-child a:hover, header nav ul li:nth-child(2) a:hover{
+        color: #c6617d;
+    }
+
+    footer.top {
+    height:3vh;
+}
+
+    footer .warnings div{
+        font-size: 1.3em;
+        margin-left: 2em;  
+    }
+
+    header nav ul li:last-child i{
+         margin-top: -0.7em;
+         font-size: 25px;
+    }
+    header nav ul li:last-child a:hover, header nav ul li:nth-child(5) a:hover{
+        color: #f192ad;
+    }
+}
+
+   
+@media (min-width: 1200px){
+    header nav ul li{
+    margin-left: 2em;
+    }
+
+    header nav ul li a:hover{
+    color: #f192ad;
+    font-size: 1.3em;
+    transition: color 1s linear;
+    transition: font-size 0.5s linear;
+    }
+
+    header nav ul li a i :hover{
+    color: #f192ad;
+    font-size: 1.3em;
+    transition: color 1s linear;
+    
+
+    }
+    header nav ul li:first-child a:hover, header nav ul li:nth-child(2) a:hover{
+        color: #c6617d
+    }
+
+    header nav ul li:last-child a, header nav ul li:nth-child(5) a{
+        color: #0a1d35;
+    }
+
+    header nav ul li:last-child a:hover, header nav ul li:nth-child(5) a:hover{
+        color: #f192ad
+    }
+
+    .content .login{
+   
+    width: 10em;
+    border-radius: 5px;
+    } 
+
+ 
+
+.content .registrate{
+    margin-left: 6em;
+    margin-right: 2em;
+    width: 10em;
+    
+} 
+
+
+
+    footer.top {
+    height:5vh;
+}
+
+
+}
